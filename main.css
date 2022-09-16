@@ -34,3 +34,8 @@ body {
     background-color: #0454aa;
     color: white;
   }
+
+#tittel {
+    text-align: center;
+    padding-top: 100px;
+}
