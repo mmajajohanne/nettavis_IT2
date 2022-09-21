@@ -1,62 +1,91 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>Kulturnyheter</title>
-        <link rel="stylesheet" href="./main.css">
-    </head>
-    <body>
 
-<<<<<<< Updated upstream
+<!DOCTYPE html>
+<html lang='no'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Kulturnyheter</title>
+    <link rel='stylesheet' href='./main.css'>
+    <style>
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .collapsible:hover {
+        background-color: rgb(20, 32, 99);
+        color: whitesmoke;
+        }
+
+        /* Style the collapsible content. Note: hidden by default */
+        .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #2156e900;
+        }
+
+        #idKonsert {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%; 
+        height: 175px;
+        }
+    </style>
+</head>
+<body>  
     <div class="topnav">
         <a class="active" href="./index.html"> Hjem </a>
         <a class="active" href="./oslonjus.html">Lokalnyheter</a>
         <a class="active" href="./sportsnyheter.html">Sportsnyheter</a>
     </div>
-    
-    <input type="image" name="Konsert" id="idKonsert" src="konsert.jpg" alt="Konsert"> 
-    <br>
-    <h1>Kulturnyheter</h1>
-    <br>
-    <h3>Oslo Kulturnatt</h3>
-    <p>Norges største endagsfestival med arrangementer på rundt 200 arenaer! wow! Det er en årlig mulighet til å bli kjent med kulturlivet i Oslo – helt gratis.</p>
-    <br>
-    <h3>Får akademikerpris</h3>
-    <p>Andreas Wahl fra Tønsberg får Akademikerprisen 2022. Fysikeren og pedagogen har over flere år drevet vitenskapsformidling som engasjerer og opplyser og som hjelper oss å skille mellom sant og usant, mener juryen.</p>
-    
-    <style>
-    #idKonsert {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
-    </style>
-=======
-        <br>
-        <input type="image" name="Konsert" id="idKonsert" src="konsert.jpg" alt="Konsert" > 
-        <h1>Kulturnyheter</h1>
-        <br>
-        <h3>Oslo Kulturnatt</h3>
-        <p>Norges største endagsfestival med arrangementer på rundt 200 arenaer! Det er en årlig mulighet til å bli kjent med kulturlivet i Oslo – helt gratis.</p>
-        <br>
-        <h3>Får akademikerpris</h3>
-        <p>Andreas Wahl fra Tønsberg får Akademikerprisen 2022. Fysikeren og pedagogen har over flere år drevet vitenskapsformidling som engasjerer og opplyser og som hjelper oss å skille mellom sant og usant, mener juryen.</p>
-        <br>
-        <h3>10 serier å se frem til i høst</h3>
-        <p>NRK P3s "Best akkurat nå"-liste er oppdatert</p>
-        
-        <style>
-            #idKonsert {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                width: 100%; 
-                height: 175px;
-            }
-        </style>
 
->>>>>>> Stashed changes
-    </body>
-    </html> 
-    
+    <h1 style="text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 60px; color: rgb(51, 90, 51);"> Kulturnyheter </h1>
+    <input type="image" name="Konsert" id="idKonsert" src="konsert.jpg" alt="Konsert" > 
+    <p> &nbsp; </p>
+    <button type="button" font-size="40" class="collapsible"> + Oshlo kulturnatt!!!! </button>
+    <div class="content">
+        <p> Norges største endagsfestival med arrangementer på rundt 200 arenaer! </p>
+        <p> HELT GRATIS whatt!?</p>
+    </div>
+    <p style="font-size: 5;">  </p>
+    <button type="button" font-size="40" class="collapsible"> + Andreas Wahl får akademikerpris </button>
+    <div class="content">
+        <p>Andreas Wahl fra Tønsberg får Akademikerprisen 2022. Fysikeren og pedagogen har over flere år drevet vitenskapsformidling som engasjerer og opplyser og som hjelper oss å skille mellom sant og usant, mener juryen.</p>
+    </div>
+    <p style="font-size: 5;">  </p>
+    <button type="button" font-size="40" class="collapsible"> + Nye serier for fansa </button>
+    <div class="content">
+        <p> Seriefan uten serietips? Look no further! </p>
+        <p> NRK P3s "Best akkurat nå"-liste er oppdatert</p>
+    </div>
+
+
+    <script>
+        let coll = document.getElementsByClassName("collapsible");
+        let i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
 </html>
