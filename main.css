@@ -38,4 +38,7 @@ body {
 #tittel {
     text-align: center;
     padding-top: 100px;
+    border-style: solid;
+    border-color: #ddd;
+    border: 2px;
 }

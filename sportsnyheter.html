@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='no'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title></title>
+    <link rel='stylesheet' href='./main.css'>
+    <style>
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .collapsible:hover {
+        background-color: rgb(20, 32, 99);
+        color: whitesmoke;
+        }
+
+        /* Style the collapsible content. Note: hidden by default */
+        .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+        background-color: #2156e900;
+        }
+    </style>
+</head>
+<body>  
+    <h1> Sportsnyheter </h1>
+    <a href="index.html"> hjem.. </a>
+    <button type="button" font-size="40" class="collapsible"> Maggy Carlsen SKANDALE </button>
+    <div class="content">
+        <p> Masse drama in the sjakk-community </p>
+        <p> Magnus quitta gamet tidlig, hvorfor?? Ingen vet... </p>
+        <p> Magnus tweeta:</p>
+        <p> <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve withdrawn from the tournament. I&#39;ve always enjoyed playing in the <a href="https://twitter.com/STLChessClub?ref_src=twsrc%5Etfw">@STLChessClub</a>, and hope to be back in the future <a href="https://t.co/YFSpl8er3u">https://t.co/YFSpl8er3u</a></p>&mdash; Magnus Carlsen (@MagnusCarlsen) <a href="https://twitter.com/MagnusCarlsen/status/1566848734616555523?ref_src=twsrc%5Etfw">September 5, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+    </div>
+    <script>
+        let coll = document.getElementsByClassName("collapsible");
+        let i;
+
+        for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+            content.style.display = "none";
+            } else {
+            content.style.display = "block";
+            }
+        });
+        }
+    </script>
+</body>
+</html>
