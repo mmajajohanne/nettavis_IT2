@@ -1,0 +1,21 @@
+* {
+    background-color: rgb(190, 203, 203);
+}
+
+div {
+    padding: 15px;
+}
+
+.title { 
+    text-align: center; 
+    word-wrap: break-word;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.article {
+    text-align: left;
+}
+
