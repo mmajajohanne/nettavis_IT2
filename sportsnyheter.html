@@ -21,7 +21,7 @@
 
         /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
         .active, .collapsible:hover {
-        background-color: rgb(135, 149, 227);
+        background-color: rgb(20, 32, 99);
         color: whitesmoke;
         }
 
@@ -35,15 +35,32 @@
     </style>
 </head>
 <body>  
+    <div class="topnav">
+        <a class="active" href="./index.html">Hjem</a>
+        <a class= "active" href="./kulturnyheter.html">Kulturnyheter</a>
+        <a class= "active" href="./oslonjus.html">Lokalnyheter</a>
+    </div>
+
     <h1> Sportsnyheter </h1>
-    <a href="index.html"> hjem.. </a>
-    <button type="button" class="collapsible"> Maggy Carlsen SKANDALE </button>
+    <p> &nbsp; </p>
+    <button type="button" font-size="40" class="collapsible"> + Maggy Carlsen SKANDALE </button>
     <div class="content">
         <p> Masse drama in the sjakk-community </p>
         <p> Magnus quitta gamet tidlig, hvorfor?? Ingen vet... </p>
         <p> Magnus tweeta:</p>
         <p> <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve withdrawn from the tournament. I&#39;ve always enjoyed playing in the <a href="https://twitter.com/STLChessClub?ref_src=twsrc%5Etfw">@STLChessClub</a>, and hope to be back in the future <a href="https://t.co/YFSpl8er3u">https://t.co/YFSpl8er3u</a></p>&mdash; Magnus Carlsen (@MagnusCarlsen) <a href="https://twitter.com/MagnusCarlsen/status/1566848734616555523?ref_src=twsrc%5Etfw">September 5, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
     </div>
+    <p> &nbsp; </p>
+    <button type="button" font-size="40" class="collapsible"> + Federer har quitta </button>
+    <div class="content">
+        <p> Fedrerer gir seg (på topp?) </p>
+        <p> Idk, jeg vet ingenting om tennis </p>
+        <p> Han har en søt hund ihvertfall :)</p>
+        <img src="sportDog.jpg">
+    </div>
+    <p style="font-size: 5;">  </p>
+
+
     <script>
         let coll = document.getElementsByClassName("collapsible");
         let i;
