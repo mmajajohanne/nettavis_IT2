@@ -61,10 +61,10 @@ body {
   font-size: 100px;
   text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
   1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
-  color:#0454aa;
+  color:rgb(72, 122, 122);
 }
 
 #undertittel {
-  color: #ddd;
+  color: rgb(38, 69, 69);
   margin-top: 10px;
 }
