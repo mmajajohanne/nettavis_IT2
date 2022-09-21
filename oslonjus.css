@@ -1,14 +1,17 @@
+* {
+    background-color: rgb(190, 203, 203);
+}
+
 div {
     padding: 15px;
 }
 
 .title { 
-    background: white;
-    text-align: center;
+    text-align: center; 
 }
 
 h1 {
-    background: #fff;
+    font-size: 60px;
 }
 
 .article {
