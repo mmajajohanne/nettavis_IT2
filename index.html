@@ -6,14 +6,17 @@
     <title>Oslo njuus</title>
     <link rel = "stylesheet" href = "./main.css">
     <style>
+        .divklikk:hover{
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <div class="topnav">
         <a class="active" href="./index.html"> Hjem </a>
-        <a class="active" href="./kulturnyheter.html">Kulturnyheter</a>
-        <a class="active" href="./oslonjus.html">Lokalnyheter</a>
-        <a class="active" href="./sportsnyheter.html">Sportsnyheter</a>
+        <a class="active" href="./kulturnyheter.html"> Kulturnyheter</a>
+        <a class="active" href="./oslonjus.html"> Lokalnyheter</a>
+        <a class="active" href="./sportsnyheter.html"> Sportsnyheter</a>
     </div>
 
     <div id="tittelTekst">
@@ -21,6 +24,20 @@
         <h1 id="tittel">BREAKING NEWS!</h1>
         <h2 id="undertittel">Her finner du de mest aktuelle nyhetene innen kultur, sport og mye annet</h2>
         <img src="./news-icon-18.png">
+    </div>
+    <div style="display: flex; flex-direction: row; padding-left: 550px; padding-right: 550px; padding-top: 30px;">
+        <div style="display: flex; flex-direction:column;" class="divklikk">
+            <h2> Sport </h2>
+            <a href="./sportsnyheter.html"><img src="sport.jpg" width="100px" height="100px" ></a>
+        </div>
+        <div style="display: flex; flex-direction:column;" class="divklikk">
+            <h2> Kultur </h2>
+            <a href="./kulturnyheter.html"> <img src="kultur.jpg" width="100px" height="100px" ></a>
+        </div>
+        <div style="display: flex; flex-direction:column;" class="divklikk">
+            <h2> Lokalt </h2>
+            <a href="./oslonjus.html"> <img src="hus1.jpg" width="90px" height="90px" ></a>
+        </div>
     </div>
    
 </body>
