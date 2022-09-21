@@ -4,6 +4,7 @@
 
 div {
     padding: 15px;
+    background-color: transparent;
 }
 
 .title { 
@@ -15,7 +16,57 @@ h1 {
     font-size: 80px;
 }
 
-.article {
-    text-align: left;
+.container {
+    position: relative;
+    width: 1200px;
+    height: 300px;
+    margin: 240px auto;
 }
 
+h3, p {
+    background: rgb(97, 147, 110);
+}
+
+.container {
+
+}
+
+.container .article1 {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: rgb(97, 147, 110);
+    /*float: left;*/
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .article1 .content1 {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container .article2 {
+    position: relative;
+    width: 650px;
+    height: 750px;
+    background: rgb(97, 147, 110);
+    /*float: left;*/
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.container .article2 .content2 {
+    position: absolute;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
