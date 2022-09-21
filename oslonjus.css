@@ -1,0 +1,17 @@
+div {
+    padding: 15px;
+}
+
+.title { 
+    background: white;
+    text-align: center;
+}
+
+h1 {
+    background: #fff;
+}
+
+.article {
+    text-align: left;
+}
+
