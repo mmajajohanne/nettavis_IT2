@@ -11,13 +11,33 @@ body {
 
 .topnav {
     overflow: hidden;
-  }
+}
   
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #000000;
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #000000;
+  text-align: center;
+  padding: 18px 40px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #0454aa;
+  color: white;
+}
+
+#tittelTekst {
     text-align: center;
+    padding: 0px;
     padding: 18px 40px;
     text-decoration: none;
     font-size: 17px;
@@ -36,9 +56,15 @@ body {
   }
 
 #tittel {
-    text-align: center;
-    padding-top: 100px;
-    border-style: solid;
-    border-color: #ddd;
-    border: 2px;
+  margin-top: 2%;
+  margin-bottom: 0;
+  font-size: 100px;
+  text-shadow: 2px 0 #fff, -2px 0 #fff, 0 2px #fff, 0 -2px #fff,
+  1px 1px #fff, -1px -1px #fff, 1px -1px #fff, -1px 1px #fff;
+  color:#0454aa;
+}
+
+#undertittel {
+  color: #ddd;
+  margin: 0;
 }
